@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Helvetica;
@@ -21,11 +21,11 @@ input[type='checkbox'] {
     cursor: pointer;
 }
 
-.bi-moon{
+.bi-moon {
     display: none;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,12 +35,12 @@ header{
     position: relative;
 }
 
-main{
+main {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
-.card{
+.card {
     margin-top: 4rem;
     display: flex;
     width: 60%;
@@ -48,30 +48,103 @@ main{
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* Dark Theme */
-
-.dark,
-.dark header {
-    background-color: #263238;
-    color: #fff;    
+.card-image,
+.card-details {
+    padding: 2rem;
+    width: 50%;
 }
 
 .card-image {
-    padding: 2rem;
-    width: 50%;
     position: relative;
-    background-color: #eff7dc;
+    background-color: #eff7fc;
 }
 
-.card-image span{
+.card-image span {
     font-size: 6rem;
     font-weight: 900;
 }
 
-.card img{
+.card img {
     width: 130%;
     transform: rotate(-25deg);
     position: absolute;
     right: -1rem;
     top: 10rem;
+}
+
+.card-details h2 {
+    font-size: 3rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.description{
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.btn{
+    background-color: #444;
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+.subtitle {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Dark Theme */
+
+.dark,
+.dark header {
+    background-color: #263238;
+    color: #fff;
+}
+
+.dark .bi-sun{
+    display: none;
+}
+
+.dark .bi-moon{
+    display: block;
+}
+
+.dark .card{
+    background-color: #37474f;    
+}
+
+.dark .card-image {
+    background-color: #273035;
+}
+
+.dark .subtitle{
+    color: #67b4f3;
+}
+
+.dark .description{
+    color: #2196f3;
+}
+
+.dark .btn{
+    background-color: #67b4f3;
 }
